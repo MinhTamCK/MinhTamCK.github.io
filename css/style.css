@@ -1,0 +1,282 @@
+.navbar-fixed-top,
+.navbar-fixed-bottom {
+    position: initial;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.stu-slide {
+    position: relative;
+}
+
+.stu-trianglify canvas {
+    width: 100%;
+}
+
+#stu-particles {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+#stu-particles .particles-js-canvas-el {
+    max-height: 500px;
+}
+
+.stu-trianglify-contact canvas {
+    width: 100%;
+}
+
+#contact {
+    position: relative;
+}
+
+.stu-contact-form {
+    font-size: 1.5em;
+    background-image: url(../image/contact-backgroup.png);
+    padding: 3rem 1.5rem;
+}
+
+.stu-contact-form .form-group {
+    margin-bottom: 45px;
+}
+
+.stu-contact-form input {
+    font-size: 1.5em;
+}
+
+.stu-contact-form textarea {
+    font-size: 1.5em;
+}
+
+.stu-contact-form input {
+    height: 50px;
+}
+
+.stu-contact-form .btn-submit-width {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.btn-submit-width input {
+    line-height: 0.1em;
+}
+
+
+/*.stu-contact-form {
+    margin: 0 auto;
+    width: 100%;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+
+.stu-contact-form .block-control {
+    height: 35px;
+}
+
+.stu-contact-form form {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.stu-contact-form .btn-send {
+    margin-top: 2%;
+}*/
+
+.hello-center {
+    width: 100%;
+    position: absolute;
+    top: 10%;
+}
+
+.hello-block {
+    width: 50%;
+    margin: 0 auto;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.hello-block h2 {
+    font-family: 'Nunito-Bold';
+    font-size: 5em;
+    text-transform: capitalize;
+    color: #393b3a;
+}
+
+.hello-block h2 span {
+    color: #00cfbd;
+}
+
+.hello-block p {
+    color: #393b3a;
+    font-size: 2em;
+}
+
+
+/*.hello-block .header-me {
+    text-align: center;
+}
+
+.hello-block .header-me h2 {
+    font-family: 'Nunito-Bold';
+    font-size: 4em;
+    text-transform: capitalize;
+    color: #393b3a;
+}
+
+
+
+.hello-block .header-me p {
+    font-family: 'Nunito-Bold';
+    font-size: 1.3em;
+    color: #393b3a;
+}
+
+.hello-block .header-me .glyphicon-triangle-bottom {
+    font-size: 7em;
+}*/
+
+.stu-social .stu-font-social .fa {
+    font-size: 7em;
+}
+
+.stu-social .stu-font-social .stu-font-face:hover {
+    color: #3a5795;
+}
+
+.stu-social .stu-font-social .stu-font-google:hover {
+    color: #db4437;
+}
+
+.stu-social .stu-font-social .stu-font-twitter:hover {
+    color: #1da1f2;
+}
+
+.stu-social .stu-font-social .stu-font-linked:hover {
+    color: #1a85bc;
+}
+
+.title-center {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+h2 {
+    font-family: 'Nunito-Bold';
+    font-size: 3.5em;
+    text-transform: capitalize;
+    color: #393b3a;
+}
+
+h3 {
+    font-family: 'Nunito-Bold';
+    font-size: 2.5em;
+    text-transform: capitalize;
+    color: #393b3a;
+}
+
+.exclamation {
+    color: #00cfbd;
+    font-size: 0.9em;
+}
+
+.colored-line {
+    background: #008ed6;
+    margin: auto;
+    height: 2px;
+    width: 80px;
+    display: block;
+}
+
+.colored-line-full {
+    background: #008ed6;
+    margin: auto;
+    height: 2px;
+    display: block;
+}
+
+.study,
+.skill {
+    margin-top: 5%;
+}
+
+.study p {
+    font-size: 1.3em;
+    color: #393b3a;
+    padding: 1.1em 0 0 0;
+}
+
+.skill-block {
+    width: 100%;
+    height: 50px;
+}
+
+.skill-block .progress-bar {
+    height: 15px;
+    border-radius: 6px
+}
+
+#about,
+.stu-social,
+#contact {
+    padding: 2rem .9375rem;
+}
+
+.navbar-fixed-top {
+    position: fixed;
+    z-index: 1;
+}
+
+.technologies-image {
+    background-image: url(../image/Technologies-backgroud.png);
+    padding: 3rem;
+}
+
+.technologies-image img {
+    width: 200px;
+    height: 60px;
+    margin: 0.75rem;
+    display: inline-block;
+}
+
+.technologies-image img:hover {
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+
+/* Let's get this party started */
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    /*-webkit-border-radius: 10px;
+    border-radius: 10px;*/
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    /*   -webkit-border-radius: 10px;
+    border-radius: 10px;*/
+    background: #293D93;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(255, 0, 0, 0.4);
+}
