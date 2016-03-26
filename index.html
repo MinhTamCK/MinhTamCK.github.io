@@ -3,9 +3,8 @@
 
 <head>
     <title>startupbume</title>
-    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../css/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/bundle.css">
+    <link rel="stylesheet" type="text/css" href="../front/font-awesome/css/font-awesome.min.css">
 </head>
 
 <body ng-app="startupbyme">
@@ -37,7 +36,7 @@
             <div class="stu-trianglify"></div>
             <!--/ Add trianglify -->
             <!-- Add particles -->
-            <div id="stu-particles"></div>
+            <div class="slide-block" id="stu-particles"></div>
             <!-- /Add particles -->
             <div class="hello-center">
                 <div class="container">
@@ -50,7 +49,7 @@
             </div>
         </section>
         <!-- About -->
-        <section id="about">
+        <section class="about" id="about">
             <div class="container">
                 <div>
                     <h2>About me</h2>
@@ -140,7 +139,7 @@
         </section>
         <!--/ Social Network -->
         <!-- Contact -->
-        <section id="contact">
+        <section id="contact" class="contact">
             <div class="container">
                 <div class="title-center">
                     <h2>Contact me</h2>
@@ -188,15 +187,16 @@
             </div>
         </section>
         <!--/ Contact -->
+        <!-- Loading -->
+        <div class="loading">
+            <div class="modal-dialog">
+                <span class="fa fa-spinner fa-spin"></span>
+            </div>
+        </div>
+        <!-- /Loading -->
         <!-- Footer -->
     </div>
-    <script defer src="../javascript/jquery-2.2.1.js"></script>
-    <script src="../javascript/angular.js"></script>
-    <script defer src="../javascript/messages.js"></script>
-    <script defer src="../javascript/bootstrap.js"></script>
-    <script defer src="../javascript/particles.js"></script>
-    <script defer src="../javascript/trianglify.js"></script>
-    <script defer src="../javascript/app.js"></script>
+    <script src="../js/all.js"></script>
 </body>
 
 </html>
