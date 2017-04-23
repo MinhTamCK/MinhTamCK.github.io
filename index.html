@@ -1,30 +1,782 @@
-<!DOCTYPE html> <html lang="en"> <head> <title>minhtam</title> <link rel="stylesheet" type="text/css" href="../css/bundle.css"> <link rel="stylesheet" type="text/css" href="../fonts/font-awesome/css/font-awesome.min.css"> </head> <body ng-app="startupbyme"> <div class="container-fruit"> <header id="home"> <nav class="navbar navbar-inverse navbar-fixed-top" data-top-navigation> <div class="container"> <div class="navbar-header"> <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button> <a class="navbar-brand" href="#">Startupbyme</a> </div> <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height:1px"> <ul class="nav navbar-nav"> <li class="active"><a href="#home">Home</a></li> <li><a href="#about">About</a></li> <li><a href="#contact">Contact</a></li> </ul> </div> </div> </nav> </header> <section class="stu-slide"> <!-- Add trianglify --> <div class="stu-trianglify"></div> <!--/ Add trianglify --> <!-- Add particles --> <div class="slide-block" id="stu-particles"></div> <!-- /Add particles --> <div class="hello-center"> <div class="container"> <div class="hello-block"> <img src="../image/my-avatar.png" alt="my avatar" width="30%" height="30%"> <h1>Hello..<span>!</span></h1> <p>My name is Tam & i am front-end web developer</p> </div> </div> </div> </section> <!-- About --> <section class="about" id="about"> <div class="container"> <div> <h2>About me</h2> <div class="colored-line-full"></div> </div> <div class="row"> <div class="col-md-6 col-xs-12"> <h3>Study..<span class="exclamation">!</span></h3> <div class="study"> <div class="image-school"> <img src="../image/logo-khtn.png" alt="University of science"> </div> <div class="infomation-study"> <ul class="text-info"> <li>I studied information techonology at university of science national university Ho Chi Minh city.</li> <li>Major : Software technology</li> <li>Scholastic : 2011-2014</li> </ul> </div> </div> </div> <div class="col-md-6 col-xs-12"> <h3>Skills..<span class="exclamation">!</span></h3> <div class="skill"> <div id="my-skills"></div> <div class="params hidden"> <div class="param"> <span class="text">JavaScript</span> <input type="hidden" class="percent" value="95"> <input type="hidden" class="color" value=" #ff5c33"> </div> <div class="param"> <span class="text">CSS3</span> <input type="hidden" class="percent" value="90"> <input type="hidden" class="color" value=" #4d79ff"> </div> <div class="param"> <span class="text">HTML5</span> <input type="hidden" class="percent" value="80"> <input type="hidden" class="color" value="#77bd9a"> </div> <div class="param"> <span class="text">PHP</span> <input type="hidden" class="percent" value="53"> <input type="hidden" class="color" value="#ff9933"> </div> <div class="param"> <span class="text">MySQL</span> <input type="hidden" class="percent" value="45"> <input type="hidden" class="color" value="#ff33ff"> </div> </div> <!-- <div class="skill-block">
-                                <h4>HTML</h4>
-                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                    <span class="sr-only">60% Skill</span>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Nguyen Minh Tam | web portfolio</title>
+
+    <meta name="keywords" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100' rel='stylesheet' type='text/css'>
+
+    <!-- Bootstrap and Font Awesome css -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- Custom stylesheet - for your changes -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- owl carousel css -->
+
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <!-- CSS Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.png">
+
+    <!-- Mordernizr -->
+    <script src="js/modernizr-2.6.2.min.js"></script>
+
+    <!-- Responsivity for older IE -->
+    <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#navigation" data-offset="120">
+
+    <!-- *** NAVBAR ***
+_________________________________________________________ -->
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand scrollTo" href="#intro">Minh Tam</a>
+            </div>
+
+            <div class="navbar-collapse collapse" id="navigation">
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#intro">Intro</a>
+                    </li>
+                    <li><a href="#about">About</a>
+                    </li>
+                    <li><a href="#work-history">WORK HISTORY</a>
+                    </li>
+                    <!-- <li><a href="#testimonials">Testimonials</a> -->
+                    </li>
+                    <li><a href="#references">My work</a>
+                    </li>
+                    <li><a href="#technologies">Technologies</a>
+                    </li>
+                    <li><a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+
+        </div>
+    </div>
+    <!-- /#navbar -->
+
+    <!-- *** NAVBAR END *** -->
+
+
+    <div id="all">
+
+
+        <!-- *** INTRO IMAGE ***
+_________________________________________________________ -->
+        <div id="intro" class="clearfix">
+            <div class="item">
+                <div class="container">
+                    <div class="row">
+                        <div class="carousel-caption">
+                            <div data-animate="fadeInDown" class="logo">
+                                <img src="img/logo-big.png" alt="logo" width="130">
+                            </div>
+                            <h1 data-animate="fadeInDown">Hello..!</h1>
+                            <h2 data-animate="slideInUp">My name is Tam & i am full stack web developer.</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- *** INTRO IMAGE END *** -->
+
+        <!-- *** ABOUT ***
+_________________________________________________________ -->
+        <div class="section" id="about">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-sm-12">
+                        <h2 class="title" data-animate="fadeInDown">About me</h2>
+                    </div>
+
+                    <div class="col-sm-12">
+
+                        <div class="row">
+
+                            <div class="col-sm-6 text-left" data-animate="fadeInUp">
+
+                                <p>I studied information techonology at <strong>university of science national university</strong> Ho Chi Minh city.</p>
+                                <p>Major : <strong>Software technology</strong>.</p>
+                                <p>Scholastic : 2011-2014</p>
+                                <p>Begin working last year 2014 i have worked with many language other such <strong>Java, PHP, Python and i really like nodeJs</strong>. I like using it create <strong>restful API, Website</strong>.</p>
+                                <p>I also like using <strong>Reacte Native, Ionic</strong> for create app mobile <strong>Android and IOS</strong>.</p>
+                                <p>Currently, i am working with position full stack developer at <strong>Autonomous.</strong></p>
+                            </div>
+
+                            <div class="col-sm-6" data-animate="fadeInUp">
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        NodeJs ( Python, PHP, Java, .NET )
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill1" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                            <span class="sr-only">50</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        Javascript
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                            <span class="sr-only">70</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        HTML coding
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+                                            <span class="sr-only">80</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        CSS (Sass, less)
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill4" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                            <span class="sr-only">70</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        Tool build (Docker, Grunt, Gulp)
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill5" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
+                                            <span class="sr-only">70</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item">
+                                    <div class="progress-title">
+                                        Deploy Server (AWS, NGINX, DOCKER)
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar progress-bar-skill5" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+                                            <span class="sr-only">50</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 mt-big" data-animate="bounceIn">
+                        <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkNAAAAJGNmZWQ4OTNmLWQ4MzktNGE5My05MjE1LTUzYWU0Y2RhMTk2Nw.jpg" class="image img-circle img-responsive" alt="This is me - IT worker">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#about -->
+
+        <!-- *** ABOUT END *** -->
+
+        <!-- *** SERVICES ***
+_________________________________________________________ -->
+        <div class="section text-gradient" id="work-history">
+            <div class="container">
+                <div class="col-md-12">
+                    <h2 class="title" data-animate="fadeInDown">WORK HISTORY</h2>
+
+                    <div class="row services">
+
+                        <div class="col-md-4" data-animate="fadeInUp">
+                            <div class="icon"><i class="fa fa-tasks"></i>
+                            </div>
+                            <h3 class="heading">Deploy</h3>
+                            <p>Using Amazon web service create EC2, S3, CloundFront.</p>
+                            <p>Install Ubuntu server and nginx webserver for deploy website</p>
+                        </div>
+
+                        <div class="col-md-4" data-animate="fadeInUp">
+                            <div class="icon"><i class="fa fa-html5"></i>
+                            </div>
+                            <h3 class="heading">HTML, CSS coding</h3>
+                            <p>Build layout website with html and css but i using grunt watch task check validation, standar struct html, syntax css and using preprocessor Sass build css.</p>
+                            <p>Handle action and animation using javascript and SVG draw. I usually use angularjs framwork for front-end or jquery plugin.</p>
+                        </div>
+
+                        <div class="col-md-4" data-animate="fadeInUp">
+                            <div class="icon"><i class="fa fa-tachometer"></i>
+                            </div>
+                            <h3 class="heading">Nodejs, Python webdelopment</h3>
+                            <p>Handle server side, create logic and connect to database, i'm using mysql, mongodb store data application and redis store cache session,...</p>
+                            <p></p>
+                        </div>
+
+                    </div>
+
+                    <hr>
+
+                    <div class="text-center">
+
+                        <p class="lead">Would you like to know more or just discuss something?</p>
+
+                        <p><a href="#contact" class="btn btn-default btn-lg scrollTo">Contact me</a>
+                        </p>
+
+                    </div>
+
+                </div>
+                <!-- /.12 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** SERVICES END *** -->
+        <!-- *** SHOWCASE ***
+_________________________________________________________ -->
+        <div class="section text-parallax parallax-image1" id="services">
+            <div class="container">
+                <div class="row showcase text-center">
+                  <h3 style="color:#fff;">DO MORE...</h3>
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+
+            <div class="dark-mask"></div>
+
+        </div>
+        <!-- /.section -->
+
+        <!-- *** REFERENCES IMAGE ***
+_________________________________________________________ -->
+        <div class="section" id="references">
+            <div class="container">
+                <div class="col-sm-12">
+
+                    <div class="mb20">
+                        <h2 class="title" data-animate="fadeInUp">My work</h2>
+
+                        <p class="lead" data-animate="fadeInUp">I have worked on dozens of projects so I have picked only the latest for you.</p>
+                    </div>
+
+                    <ul id="filter" data-animate="fadeInUp">
+                        <li class="active"><a href="#" data-filter="all">All</a>
+                        </li>
+                        <li><a href="#" data-filter="front-end">Front end</a>
+                        </li>
+                        <li><a href="#" data-filter="back-end">Back end</a>
+                        </li>
+                        <!-- <li><a href="#" data-filter="marketing">Marketing</a>
+                        </li> -->
+                        <li><a href="#" data-filter="other">Other</a>
+                        </li>
+                    </ul>
+
+                    <!-- <div id="detail">
+
+                        <span class="close">&times;</span>
+
+                        <div id="detail-slider"></div>
+
+                        <div class="text-center">
+                            <h1 id="detail-title">&nbsp;</h1>
+                        </div>
+
+                        <div id="detail-content"></div>
+
+                    </div> -->
+                    <!-- Reference detail -->
+
+                    <!-- <div id="references-masonry" data-animate="fadeInUp">
+
+                        <div class="reference-item" data-category="front-end">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-1.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Project name</h3>
+                                        <p>Short project description goes here...</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-download"></i> Download case study</a>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="skill-block">
-                                <h4>CSS</h4>
-                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                    <span class="sr-only">50% Skill</span>
+                        </div>
+                        <div class="reference-item" data-category="back-end">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-2.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Project name</h3>
+                                        <p>Short project description goes here...</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-download"></i> Download case study</a>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="skill-block">
-                                <h4>JavaScript</h4>
-                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                    <span class="sr-only">70% Skill</span>
+                        </div>
+
+                        <!-- <div class="reference-item" data-category="marketing">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-3.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Project name</h3>
+                                        <p>Short project description goes here...</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-download"></i> Download case study</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="marketing">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-4.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Project name</h3>
+                                        <p>Short project description goes here...</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-download"></i> Download case study</a>
+                                    </p>
                                 </div>
                             </div>
-                            <div class="skill-block">
-                                <h4>PHP</h4>
-                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
-                                    <span class="sr-only">50% Skill</span>
+                        </div>
+
+                        <div class="reference-item" data-category="front-end">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-5.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Project name</h3>
+                                        <p>Short project description goes here...</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-download"></i> Download case study</a>
+                                    </p>
+
                                 </div>
                             </div>
-                            <div class="skill-block">
-                                <h4>Mysql/SQL server</h4>
-                                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
-                                    <span class="sr-only">70% Skill</span>
+                        </div>
+
+                        <div class="reference-item" data-category="other">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-6.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Project name</h3>
+                                        <p>Short project description goes here...</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-download"></i> Download case study</a>
+                                    </p>
+
                                 </div>
-                            </div> --> </div> </div> </div> <div class="row"> <div class="col-md-12"> <h3>Experience..<span class="exclamation">!</span></h3> </div> <div class="col-md-6 col-xs-12"> <div class="experience-content"> <div class="panel panel-primary"> <div class="panel-heading"> <h4>Front-end Developer</h4> <h5>Sutrix Media VietNam</h5> </div> <div class="panel-body"> <ul> <li>Create jquery plugin for project.</li> <li>Create directive and use angularjs control get data type json from server and process data via client site.</li> <li>Build App using Ionic famework.</li> </ul> </div> </div> </div> </div> <div class="col-md-6 col-xs-12"> <div class="experience-content"> <div class="panel panel-primary"> <div class="panel-heading"> <h4>Staff Developer</h4> <h5>SystemEXE VietNam</h5> </div> <div class="panel-body"> <ul> <li> Develop software medical use DB2,Java,HTML,CSS,Jquery and AngularJS. </li> <li> Develop software looking work use MySQL,PHP(Laravel 5),HTML,CSS,Jquery and AngularJS. </li> <li> Develop software manager car use Oracle,Java,HTML,CSS,Jquery. </li> </ul> </div> </div> </div> </div> </div> <div class="row"> <div class="col-md-12"> <div> <h3>Resource..<span class="exclamation">!</span></h3> </div> </div> <div class="col-md-4"> <div class="card text-center"> <span class="fa fa-file" aria-hidden="true"></span> <div class="card-block"> <h4 class="card-title">Template build struct project front end</h4> <div class="colored-line-full"></div> <div class="card-text text-left"> <ul> <li> Template use gulp auto build work follow by task </li> <li> Support compiled scss to css </li> <li>It can validation html,css,js by htmlhint,csslint,jshint </li> <li> Minify css,js file and optimize image when you want release project</li> </ul> <a class="btn btn-primary btn-lg btn-block" href="https://github.com/MinhTamCK/template-front-end" title="repository" role="button">Link</a> </div> </div> </div> </div> <div class="col-md-4"> <div class="card text-center"> <i class="fa fa-check" aria-hidden="true"></i> <div class="card-block"> <h4 class="card-title">Code rule</h4> <div class="colored-line-full"></div> <div class="card-text text-left"> <ul> <li>Comming soon!</li> </ul> <a class="btn btn-primary btn-lg btn-block" href="" title="repository" role="button">Link</a> </div> </div> </div> </div> <div class="col-md-4"> <div class="card text-center"> <i class="fa fa-h-square" aria-hidden="true"></i> <div class="card-block"> <h4 class="card-title">Motel project build nodejs</h4> <div class="colored-line-full"></div> <div class="card-text text-left"> <ul> <li>Comming soon!</li> </ul> <a class="btn btn-primary btn-lg btn-block" href="" title="repository" role="button">Link</a> </div> </div> </div> </div> </div> <div class="row"> <div class="col-md-12"> <h3>Technologies ..<span class="exclamation">!</span></h3> </div> <div class="col-md-12"> <div class="technologies-image"> <div> <img src="../image/logo-technologies/angular.png" alt="angular" class=""> </div> <div> <img src="../image/logo-technologies/jquery.png" alt="jquery" class=""> </div> <div> <img src="../image/logo-technologies/sass.png" alt="sass" class=""> </div> <div> <img src="../image/logo-technologies/git.png" alt="git" class=""> </div> </div> </div> </div> </div> </section> <!--/ About --> <!-- Social Network --> <section class="stu-social"> <div class="container text-center"> <div class="title-center"> <h2>Social Network</h2> <div class="colored-line"></div> </div> <div class="col-md-3"> <a href="https://www.facebook.com/tam.nguyen.75641" title="facebook" target="_blank"> <span class="fa fa-facebook"></span> <p class="facebook-text">Facebook friend</p> </a> </div> <div class="col-md-3"> <a href="https://plus.google.com/u/0/117126940633058835894" title="Google plus" target="_blank"> <span class="fa fa-google-plus"></span> <p class="google-text">Google+ view</p> </a> </div> <div class="col-md-3"> <a href="https://twitter.com/MinhTam70910140" title="twitter" target="_blank"> <span class="fa fa-twitter"></span> <p class="twitter-text">Twitter followers</p> </a> </div> <div class="col-md-3"> <a href="https://vn.linkedin.com/in/tam-nguyen-624997114" title="linkedin" target="_blank"> <span class="fa fa-linkedin"></span> <p class="linked-text">Linked connect</p> </a> </div> </div> </section> <!--/ Social Network --> <!-- Contact --> <section id="contact" class="contact"> <div class="container"> <div class="title-center"> <h2>Contact me</h2> <div class="colored-line"></div> </div> <div class="row stu-contact-form"> <form action="/contact" name="contactForm" method="post" autocomplete="off" novalidate> <div class="col-md-6 col-sm-12"> <div class="form-group" ng-class="{'has-error' : contactForm.name.$invalid && contactForm.name.$dirty}"> <label class="sr-only" for="full-name"> full name </label> <input class="form-control" id="full-name" type="text" name="name" placeholder="Name" required ng-model="formData.name" ng-pattern=""> <div ng-messages="contactForm.name.$error" ng-show="contactForm.name.$dirty" role="alert"> <p class="help-block" ng-message="required">Please enter a value for this field.</p> <p class="help-block" ng-message="pattern">This field must be a valid your name.</p> </div> </div> <div class="form-group" ng-class="{'has-error' : contactForm.email.$invalid && contactForm.email.$dirty}"> <label class="sr-only" for="email"> email </label> <input class="form-control" id="email" type="email" name="email" placeholder="Email" ng-model="formData.email" required> <div ng-messages="contactForm.email.$error" ng-show="contactForm.email.$dirty" role="alert"> <p class="help-block" ng-message="required">Please enter a value for this field.</p> <p class="help-block" ng-message="email">This field must be a valid email address.</p> </div> </div> <div class="form-group" ng-class="{'has-error' : contactForm.phone.$invalid && contactForm.phone.$dirty}"> <label class="sr-only" for="phone"> phone </label> <input class="form-control" id="phone" type="tel" name="phone" placeholder="Phone" ng-model="formData.phone" required> <div ng-messages="contactForm.phone.$error" ng-show="contactForm.phone.$dirty" role="alert"> <p class="help-block" ng-message="required">Please enter a value for this field.</p> <p class="help-block" ng-message="tel">This field must be a valid email address.</p> </div> </div> </div> <div class="col-md-6 col-sm-12"> <label class="sr-only" for="message"> message </label> <textarea class="form-control" id="message" name="message" rows="7" placeholder="Message..." required></textarea> </div> </form> </div> <div class="row"> <div class="col-md-12"> <div class="btn-submit-width"> <input class="btn btn-success btn-block" type="submit" name="send-info" value="Send" ng-disabled="contactForm.$invalid"> </div> </div> </div> </div> </section> <!--/ Contact --> <!-- Loading --> <div class="loading"> <div class="modal-dialog"> <span class="fa fa-spinner fa-spin"></span> </div> </div> <!-- /Loading --> <!-- Footer --> <footer> <div class="container"> <div class="row"> <div class="col-md-5"> <p>© 2016 Nguyen Minh Tam</p> </div> <div class="col-md-7"> </div> </div> </div> </footer> <!-- /Footer --> </div> <script src="../js/all.js"></script></body></html>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="back-end">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-7.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Project name</h3>
+                                        <p>Short project description goes here...</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-download"></i> Download case study</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="reference-item" data-category="front-end">
+                            <div class="reference">
+                                <a href="#">
+                                    <img src="img/portfolio-8.jpg" class="img-responsive" alt="" />
+
+                                    <div class="overlay">
+                                        <h3 class="reference-title">Project name</h3>
+                                        <p>Short project description goes here...</p>
+                                    </div>
+                                </a>
+
+                                <div class="sr-only reference-description" data-images="img/main-slider1.jpg,img/main-slider2.jpg,img/main-slider3.jpg">
+
+                                    <p>Projecting surrounded literature yet delightful alteration but bed men. Open are from long why cold. If must snug by upon sang loud left. As me do preference entreaties compliment motionless ye literature. Day behaviour
+                                        explained law remainder. Produce can cousins account you pasture. Peculiar delicate an pleasant provided do perceive.</p>
+
+                                    <p>Sitting mistake towards his few country ask. You delighted two rapturous six depending objection happiness something the. Off nay impossible dispatched partiality unaffected. Norland adapted put ham cordial. Ladies
+                                        talked may shy basket narrow see. Him she distrusts questions sportsmen. Tolerably pretended neglected on my earnestly by. Sex scale sir style truth ought.</p>
+
+                                    <p class="buttons">
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-globe"></i> Visit website</a>
+                                        <a class="btn btn-primary" href="javascript:void(0);"><i class="fa fa-download"></i> Download case study</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> -->
+                    <!-- /#references-masonry -->
+
+                </div>
+                <!-- /.12 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** REFERENCES END *** -->
+
+        <!-- *** CUSTOMERS ***
+_________________________________________________________ -->
+
+        <div class="section text-gray" id="technologies">
+            <div class="container">
+                <div class="col-md-12">
+
+
+                    <div class="row">
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/logo-technologies/angular.png" title="angularjs" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/logo-technologies/git.png" title="git" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/logo-technologies/nodejs.png" title="Node JS" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/logo-technologies/sass.png" title="Sass" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/logo-technologies/gulp.png" title="gulp" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                        <div class="col-sm-4 col-md-2  col-xs-6">
+                            <div class="customer">
+                                <img class="img-responsive" src="img/logo-technologies/python.png" title="python" data-placement="bottom" data-toggle="tooltip" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /.row -->
+
+
+                </div>
+                <!-- /.12 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** CUSTOMERS END *** -->
+
+        <!-- *** CONTACT ***
+_________________________________________________________ -->
+
+        <div class="section contact" id="contact" data-animate="bounceIn">
+            <div class="container">
+                <div class="col-md-12">
+
+
+                    <h2 class="title">Contact me</h2>
+
+                    <div class="row">
+
+                        <div class="col-md-8 col-md-offset-2">
+                            <form id="contact-form" method="post">
+
+                                <div class="messages">
+
+                                </div>
+
+                                <div class="controls">
+
+                                    <div class="row">
+                                        <!-- <div class="col-md-6">
+                                            <input type="text" name="name" class="form-control" placeholder="Your firstname *" required="required">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="surname" class="form-control" placeholder="Your lastname *" required="required">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="email" class="form-control" placeholder="Your email *" required="required">
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input type="text" name="phone" class="form-control" placeholder="Your phone">
+                                        </div> -->
+                                        <div class="col-md-12">
+                                            <input type="text" name="subject" class="form-control" placeholder="Subject *" required>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <textarea name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"></textarea>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <input type="submit" class="btn btn-primary btn-lg" value="Send message">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- /.12 -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** CONTACT END *** -->
+
+        <!-- *** MAP ***
+_________________________________________________________ -->
+
+        <div class="section" id="map">
+
+        </div>
+        <!-- /.section -->
+
+        <!-- *** MAP END *** -->
+
+        <!-- *** FOOTER ***
+_________________________________________________________ -->
+
+        <div class="section" id="footer">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-sm-6">
+
+                        <p class="social">
+                            <a href="https://www.facebook.com/tam.nguyen.75641" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-facebook"></i></a>
+                            <a href="https://vn.linkedin.com/in/tam-nguyen-624997114" class="external instagram" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://plus.google.com/u/0/117126940633058835894" class="external gplus" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-google-plus"></i></a>
+                            <a href="mailto:minhtamck4@gmail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
+                        </p>
+                    </div>
+                    <!-- /.6 -->
+
+                    <div class="col-sm-6">
+                        <p>&copy; <span><script>document.write(new Date().getFullYear())</script></span> Nguyen Minh Tam. All rights reserved.</p>
+                    </div>
+
+                    <div class="col-sm-12">
+                        <p class="template-bootstrapious">NGUYEN MINH TAM</p>
+
+                        <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) -->
+
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.section -->
+
+        <!-- *** FOOTER END *** -->
+
+
+
+    </div>
+    <!-- /#all -->
+
+    <!-- #### JAVASCRIPT FILES ### -->
+
+    <!-- js base -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- for demo purpose -->
+    <script src="js/jquery.cookie.js"></script>
+
+    <!-- waypoints for scroll spy -->
+    <script src="js/waypoints.min.js"></script>
+
+    <!-- maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;sensor=false"></script>
+    <script src="js/gmaps.js"></script>
+
+    <!-- masonry layout -->
+    <script src="js/masonry.pkgd.min.js"></script>
+
+    <!-- owl carousel -->
+    <script src="js/owl.carousel.min.js"></script>
+
+
+    <!-- jQuery scroll to -->
+    <script src="js/jquery.scrollTo.min.js"></script>
+
+    <!-- jQuery counter -->
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!-- jQuery parallax -->
+    <script src="js/jquery.parallax-1.1.3.js"></script>
+
+    <!-- main js file -->
+
+    <script src="js/front.js"></script>
+
+
+
+
+
+</body>
+
+</html>
