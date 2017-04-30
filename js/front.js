@@ -233,34 +233,34 @@ $('#filter a').click(function (e) {
  *  open reference
  *  =======================================*/
 
-$('.reference-item').click(function (e) {
-    e.preventDefault();
-
-    var element = $(this);
-    var title = element.find('.reference-title').text();
-    var description = element.find('.reference-description').html();
-
-    images = element.find('.reference-description').data('images').split(',');
-
-    if (images.length > 0) {
-	slider = '';
-	for (var i = 0; i < images.length; ++i) {
-	    slider = slider + '<div class="item"><img src=' + images[i] + ' alt="" class="img-responsive"></div>';
-	}
-    }
-    else {
-	slider = '';
-    }
-
-
-
-    $('#detail-title').text(title);
-    $('#detail-content').html(description);
-    $('#detail-slider').html(slider);
-
-    openReference();
-
-});
+// $('.reference-item').click(function (e) {
+//     e.preventDefault();
+//
+//     var element = $(this);
+//     var title = element.find('.reference-title').text();
+//     var description = element.find('.reference-description').html();
+//
+//     images = element.find('.reference-description').data('images').split(',');
+//
+//     if (images.length > 0) {
+// 	slider = '';
+// 	for (var i = 0; i < images.length; ++i) {
+// 	    slider = slider + '<div class="item"><img src=' + images[i] + ' alt="" class="img-responsive"></div>';
+// 	}
+//     }
+//     else {
+// 	slider = '';
+//     }
+//
+//
+//
+//     $('#detail-title').text(title);
+//     $('#detail-content').html(description);
+//     $('#detail-slider').html(slider);
+//
+//     openReference();
+//
+// });
 
 function openReference() {
 
