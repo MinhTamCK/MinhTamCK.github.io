@@ -119,18 +119,29 @@ h3 {
 .timeline .what { font-size: 16px; }
 
 /* Skills */
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
+.skills {
+  margin: 0;
+  padding: 0;
 }
-.chips span {
+.skills > div {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--rule);
+}
+.skills > div:last-child { border-bottom: none; }
+.skills dt {
+  color: var(--muted);
   font-size: 13px;
-  padding: 6px 12px;
-  border: 1px solid var(--rule);
-  border-radius: 999px;
-  color: var(--ink);
-  background: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  align-self: center;
+}
+.skills dd {
+  margin: 0;
+  font-size: 16px;
+  align-self: center;
 }
 
 /* Projects */
@@ -206,7 +217,7 @@ footer {
   h2 { font-size: 24px; }
   .intro { margin-bottom: 56px; }
   section { padding: 48px 0; }
-  .timeline li, .contact li {
+  .timeline li, .contact li, .skills > div {
     grid-template-columns: 1fr;
     gap: 4px;
   }
