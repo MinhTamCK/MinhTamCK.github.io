@@ -1,3 +1,5 @@
-Hello,
+# minhtamck.github.io
 
-#This is my website profile.
+Personal site — static HTML/CSS, no framework.
+
+Live: https://minhtamck.github.io

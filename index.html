@@ -1,629 +1,124 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
-
-<head itemtype="http://schema.org/Article">
-    <meta charset="utf-8">
-    <meta name="robots" content="all,follow">
-    <meta name="googlebot" content="index,follow,snippet,archive">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Nguyen Minh Tam</title>
-    <!-- For SEO -->
-    <meta name="keywords" content="javascript, nodejs, front-end, front-end">
-    <meta name="description" content="Hi, I'm Tam and I'm front-end website developer.">
-    <meta name="author" content="nguyen minh tam">
-
-    <!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="Nguye Minh Tam">
-    <meta itemprop="description" content="Hi, I'm Tam and I'm front-end website developer.">
-    <meta itemprop="image" content="img/logo-big.png">
-
-    <!-- Open Graph data -->
-    <meta property="og:title" content="nguyen minh tam"/>
-    <meta property="og:description" content="Hi, I'm Tam and I'm front-end website developer."/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="img/logo-big.png"/>
-    <meta property="og:url" content="http://minhtamck.github.io"/>
-    <meta property="og:site_name" content="minhtam"/>
-
-    <!--meta tags for twitter card-->
-    <meta name="twitter:card" content="nguyen minh tam" />
-    <meta name="twitter:site" content="@minhtamckdotgithubdotio" /> 
-    <meta name="twitter:title" content="nguyen minh tam" /> 
-    <meta name="twitter:description" content="Hi, I'm Tam and I'm front-end website developer." /> 
-    <meta name="twitter:image" content="img/logo-big.png" />
-    <!-- End For SEO -->
-
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,700,100%7CRoboto:400,700,300,100' rel='stylesheet' type='text/css'>
-
-    <!-- Bootstrap and Font Awesome css -->
-    <link href="css/font-awesome.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme stylesheet -->
-    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
-
-    <!-- Custom stylesheet - for your changes -->
-    <link href="css/custom.css" rel="stylesheet">
-
-    <!-- owl carousel css -->
-
-    <link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-
-    <!-- CSS Animations -->
-    <link href="css/animate.css" rel="stylesheet">
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="favicon.png">
-
-    <!-- Mordernizr -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-
-    <!-- Responsivity for older IE -->
-    <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
-<![endif]-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nguyen Minh Tam — Indie Builder & Full-Stack Dev</title>
+  <meta name="description" content="Indie builder shipping AI agents, automation systems, and DTC e-commerce. TypeScript, Next.js, Python, Claude API." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
-<body data-spy="scroll" data-target="#navigation" data-offset="120">
-
-    <!-- *** NAVBAR ***
-_________________________________________________________ -->
-
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="navbar">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand scrollTo" href="#intro">Minh Tam</a>
-            </div>
-
-            <div class="navbar-collapse collapse" id="navigation">
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#intro">Intro</a>
-                    </li>
-                    <li><a href="#about">About</a>
-                    </li>
-                    <li><a href="#work-history">WORK HISTORY</a>
-                    </li>
-                    <!-- <li><a href="#testimonials">Testimonials</a> -->
-                    </li>
-                    <li><a href="#references">My work</a>
-                    </li>
-                    <li><a href="#technologies">Technologies</a>
-                    </li>
-                    <li><a href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!--/.nav-collapse -->
-
-        </div>
-    </div>
-    <!-- /#navbar -->
-
-    <!-- *** NAVBAR END *** -->
-
-
-    <div id="all">
-
-
-        <!-- *** INTRO IMAGE ***
-_________________________________________________________ -->
-        <div id="intro" class="clearfix">
-            <div class="item">
-                <div class="container">
-                    <div class="row">
-                        <div class="carousel-caption">
-                            <div data-animate="fadeInDown" class="logo">
-                                <img src="img/logo-big.png" alt="logo" width="130">
-                            </div>
-                            <h1 data-animate="fadeInDown">Hello..!</h1>
-                            <h2 data-animate="slideInUp">My name is Tam & i am front end web developer.</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- *** INTRO IMAGE END *** -->
-
-        <!-- *** ABOUT ***
-_________________________________________________________ -->
-        <div class="section" id="about">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-sm-12">
-                        <h2 class="title" data-animate="fadeInDown">About me</h2>
-                    </div>
-
-                    <div class="col-sm-12">
-
-                        <div class="row">
-
-                            <div class="col-sm-6 text-left" data-animate="fadeInUp">
-                                <p>I studied information techonology at <strong>University of Science</strong> Ho Chi Minh city.</p>
-                                <p>Major : <strong>Software technology</strong>.</p>
-                                <p>Scholastic : 2011-2015</p>
-                                <p>I have begun working since year 2014. I have worked with many different languages such as <strong> Java, PHP, Python </strong> and my most favorite; <strong>NodeJs</strong>.I like using it to create <strong>restful API</strong> websites.</p>
-                                <p>I also researching and apply multiple technology for front-end as <strong>Angularjs, React, isomorphic-javascript </strong> integrate with backend Node Js for my projects and projects at company.</p>
-                                <p>Currently, I am working as a front end developer at <strong>Autonomous.</strong></p>
-                            </div>
-
-                            <div class="col-sm-6" data-animate="fadeInUp">
-
-                                <div class="skill-item">
-                                    <div class="progress-title">
-                                        NodeJs ( Python, PHP, Java, .NET )
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-skill1" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                            <span class="sr-only">50</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="progress-title">
-                                        Javascript
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-skill2" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                            <span class="sr-only">70</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="progress-title">
-                                        HTML coding
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-skill3" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                                            <span class="sr-only">80</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="progress-title">
-                                        CSS (Sass, less)
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-skill4" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                            <span class="sr-only">70</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="progress-title">
-                                        Tool build (Docker, Grunt, Gulp)
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-skill5" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;">
-                                            <span class="sr-only">70</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="skill-item">
-                                    <div class="progress-title">
-                                        Deploy Server (AWS, NGINX, DOCKER)
-                                    </div>
-                                    <div class="progress">
-                                        <div class="progress-bar progress-bar-skill5" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-                                            <span class="sr-only">50</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 mt-big" data-animate="bounceIn">
-                        <img src="img/it-me.jpg" class="image img-circle img-responsive" alt="This is me - IT worker">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- /#about -->
-
-        <!-- *** ABOUT END *** -->
-
-        <!-- *** SERVICES ***
-_________________________________________________________ -->
-        <div class="section text-gradient" id="work-history">
-            <div class="container">
-                <div class="col-md-12">
-                    <h2 class="title" data-animate="fadeInDown">WORK HISTORY</h2>
-
-                    <div class="row services">
-
-                        <div class="col-md-4" data-animate="fadeInUp">
-                            <div class="icon"><i class="fa fa-tasks"></i>
-                            </div>
-                            <h3 class="heading">Deploy</h3>
-                            <p>Using Amazon web service create EC2, S3, CloundFront.</p>
-                            <p>Install Ubuntu server and nginx webserver for deploy website</p>
-                        </div>
-
-                        <div class="col-md-4" data-animate="fadeInUp">
-                            <div class="icon"><i class="fa fa-html5"></i>
-                            </div>
-                            <h3 class="heading">HTML, CSS coding</h3>
-                            <p>Build layout website with html and css but i using grunt watch task check validation, standar struct html, syntax css and using preprocessor Sass build css.</p>
-                            <p>Handle action and animation using javascript and SVG draw. I usually use angularjs framwork for front-end or jquery plugin.</p>
-                        </div>
-
-                        <div class="col-md-4" data-animate="fadeInUp">
-                            <div class="icon"><i class="fa fa-tachometer"></i>
-                            </div>
-                            <h3 class="heading">Nodejs, Python webdelopment</h3>
-                            <p>Handle server side, create logic and connect to database, i'm using mysql, mongodb store data application and redis store cache session,...</p>
-                            <p></p>
-                        </div>
-
-                    </div>
-
-                    <hr>
-
-                    <div class="text-center">
-
-                        <p class="lead">Would you like to know more or just discuss something?</p>
-
-                        <p><a href="#contact" class="btn btn-default btn-lg scrollTo">Contact me</a>
-                        </p>
-
-                    </div>
-
-                </div>
-                <!-- /.12 -->
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.section -->
-
-        <!-- *** SERVICES END *** -->
-        <!-- *** SHOWCASE ***
-_________________________________________________________ -->
-        <div class="section text-parallax parallax-image1" id="services">
-            <div class="container">
-                <div class="row showcase text-center">
-                  <h3 style="color:#fff;">DO MORE...</h3>
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container -->
-
-            <div class="dark-mask"></div>
-
-        </div>
-        <!-- /.section -->
-
-        <!-- *** REFERENCES IMAGE ***
-_________________________________________________________ -->
-        <div class="section" id="references">
-            <div class="container">
-                <div class="col-sm-12">
-
-                    <div class="mb20">
-                        <h2 class="title" data-animate="fadeInUp">My work</h2>
-
-                        <p class="lead" data-animate="fadeInUp">I have worked on dozens of projects so I have picked only the latest for you.</p>
-                    </div>
-
-                    <ul id="filter" data-animate="fadeInUp">
-                        <li class="active"><a href="#" data-filter="all">All</a>
-                        </li>
-                        <li><a href="#" data-filter="front-end">Front end</a>
-                        </li>
-                        <li><a href="#" data-filter="back-end">Back end</a>
-                        </li>
-                        <!-- <li><a href="#" data-filter="marketing">Marketing</a>
-                        </li> -->
-                        <!-- <li><a href="#" data-filter="other">Other</a> -->
-                        </li>
-                    </ul>
-
-                    <div id="detail">
-
-                        <span class="close">&times;</span>
-
-                        <div id="detail-slider"></div>
-
-                        <div class="text-center">
-                            <h1 id="detail-title">&nbsp;</h1>
-                        </div>
-
-                        <div id="detail-content"></div>
-
-                    </div>
-                    <!-- Reference detail -->
-
-                    <div id="references-masonry" data-animate="fadeInUp">
-                        <div class="reference-item" data-category="front-end">
-                            <div class="reference">
-                                <a href="javascript:void(0)">
-                                    <img src="img/fifu-project.png" class="img-responsive" alt="fifu project" />
-                                    <div class="overlay">
-                                        <h3 class="reference-title">FIFU</h3>
-                                        <p>The project for media</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="reference-item" data-category="front-end">
-                            <div class="reference">
-                                <a href="javascript:void(0)">
-                                    <img src="img/vozExpress.png" class="img-responsive" alt="vozExpress project" />
-                                    <div class="overlay">
-                                        <h3 class="reference-title">thenextvoz.com</h3>
-                                        <p>The project for news technical,review new product</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="reference-item" data-category="back-end">
-                            <div class="reference">
-                                <a href="javascript:void(0)">
-                                    <img src="img/deeprelax.png" class="img-responsive" alt="deeprelax project" />
-                                    <div class="overlay">
-                                        <h3 class="reference-title">deeprelax.com</h3>
-                                        <p>The project e commerce for outdoor, furniture</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="reference-item" data-category="back-end">
-                            <div class="reference">
-                                <a href="javascript:void(0)">
-                                    <img src="img/smart-dock.png" class="img-responsive" alt="Smart Dock project" />
-                                    <div class="overlay">
-                                        <h3 class="reference-title">Smart Dock</h3>
-                                        <p>The project for hackathon create new product in 5 days</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- /#references-masonry -->
-
-                </div>
-                <!-- /.12 -->
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.section -->
-
-        <!-- *** REFERENCES END *** -->
-
-        <!-- *** CUSTOMERS ***
-_________________________________________________________ -->
-
-        <div class="section text-gray" id="technologies">
-            <div class="container">
-                <div class="col-md-12">
-
-
-                    <div class="row">
-                        <div class="col-sm-4 col-md-2  col-xs-6">
-                            <div class="customer">
-                                <img class="img-responsive" src="img/logo-technologies/angular.png" title="angularjs" data-placement="bottom" data-toggle="tooltip" alt="">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4 col-md-2  col-xs-6">
-                            <div class="customer">
-                                <img class="img-responsive" src="img/logo-technologies/git.png" title="git" data-placement="bottom" data-toggle="tooltip" alt="">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4 col-md-2  col-xs-6">
-                            <div class="customer">
-                                <img class="img-responsive" src="img/logo-technologies/nodejs.png" title="Node JS" data-placement="bottom" data-toggle="tooltip" alt="">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4 col-md-2  col-xs-6">
-                            <div class="customer">
-                                <img class="img-responsive" src="img/logo-technologies/sass.png" title="Sass" data-placement="bottom" data-toggle="tooltip" alt="">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4 col-md-2  col-xs-6">
-                            <div class="customer">
-                                <img class="img-responsive" src="img/logo-technologies/gulp.png" title="gulp" data-placement="bottom" data-toggle="tooltip" alt="">
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4 col-md-2  col-xs-6">
-                            <div class="customer">
-                                <img class="img-responsive" src="img/logo-technologies/python.png" title="python" data-placement="bottom" data-toggle="tooltip" alt="">
-                            </div>
-                        </div>
-
-                    </div>
-                    <!-- /.row -->
-
-
-                </div>
-                <!-- /.12 -->
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.section -->
-
-        <!-- *** CUSTOMERS END *** -->
-
-        <!-- *** CONTACT ***
-_________________________________________________________ -->
-
-        <div class="section contact" id="contact" data-animate="bounceIn">
-            <div class="container">
-                <div class="col-md-12">
-
-
-                    <h2 class="title">Contact me</h2>
-
-                    <div class="row">
-
-                        <div class="col-md-8 col-md-offset-2">
-                            <form id="contact-form" method="post">
-
-                                <div class="messages">
-
-                                </div>
-
-                                <div class="controls">
-
-                                    <div class="row">
-                                        <!-- <div class="col-md-6">
-                                            <input type="text" name="name" class="form-control" placeholder="Your firstname *" required="required">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" name="surname" class="form-control" placeholder="Your lastname *" required="required">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" name="email" class="form-control" placeholder="Your email *" required="required">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" name="phone" class="form-control" placeholder="Your phone">
-                                        </div> -->
-                                        <div class="col-md-12">
-                                            <input type="text" name="subject" class="form-control" placeholder="Subject *" required>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <textarea name="message" class="form-control" placeholder="Message for me *" rows="4" required="required"></textarea>
-                                        </div>
-                                        <div class="col-md-12 text-center">
-                                            <input type="submit" class="btn btn-primary btn-lg" value="Send message">
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
-
-                    </div>
-
-                </div>
-                <!-- /.12 -->
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.section -->
-
-        <!-- *** CONTACT END *** -->
-
-        <!-- *** MAP ***
-_________________________________________________________ -->
-
-        <div class="section" id="map">
-
-        </div>
-        <!-- /.section -->
-
-        <!-- *** MAP END *** -->
-
-        <!-- *** FOOTER ***
-_________________________________________________________ -->
-
-        <div class="section" id="footer">
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-sm-6">
-
-                        <p class="social">
-                            <a href="https://www.facebook.com/tam.nguyen.75641" class="external facebook" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-facebook"></i></a>
-                            <a href="https://vn.linkedin.com/in/tam-nguyen-624997114" class="external instagram" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-linkedin"></i></a>
-                            <a href="https://plus.google.com/u/0/117126940633058835894" class="external gplus" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-google-plus"></i></a>
-                            <a href="mailto:minhtamck4@gmail.com" class="email" data-animate-hover="shake" data-animate="fadeInUp"><i class="fa fa-envelope"></i></a>
-                        </p>
-                    </div>
-                    <!-- /.6 -->
-
-                    <div class="col-sm-6">
-                        <p>&copy; <span><script>document.write(new Date().getFullYear())</script></span> Nguyen Minh Tam. All rights reserved.</p>
-                    </div>
-
-                    <div class="col-sm-12">
-                        <p class="template-bootstrapious">NGUYEN MINH TAM</p>
-
-                        <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) -->
-
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- /.container -->
-        </div>
-        <!-- /.section -->
-
-        <!-- *** FOOTER END *** -->
-
-
-
-    </div>
-    <!-- /#all -->
-
-    <!-- #### JAVASCRIPT FILES ### -->
-
-    <!-- js base -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- for demo purpose -->
-    <script src="js/jquery.cookie.js"></script>
-
-    <!-- waypoints for scroll spy -->
-    <script src="js/waypoints.min.js"></script>
-
-    <!-- maps -->
-    <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDDyB8cnVYUHtoTSU9Ly9BXZyIJY6Ij7Fo&v=3.exp&amp;sensor=false"></script>
-    <script src="js/gmaps.js"></script>
-
-    <!-- masonry layout -->
-    <script src="js/masonry.pkgd.min.js"></script>
-
-    <!-- owl carousel -->
-    <script src="js/owl.carousel.min.js"></script>
-
-
-    <!-- jQuery scroll to -->
-    <script src="js/jquery.scrollTo.min.js"></script>
-
-    <!-- jQuery counter -->
-    <script src="js/jquery.counterup.min.js"></script>
-
-    <!-- jQuery parallax -->
-    <script src="js/jquery.parallax-1.1.3.js"></script>
-
-    <!-- main js file -->
-
-    <script src="js/front.js"></script>
-
-
-
-
-
+<body>
+  <main>
+    <header class="intro">
+      <p class="eyebrow">Nguyen Minh Tam</p>
+      <h1>Indie builder shipping <em>AI agents</em>, automation systems, and DTC e-commerce.</h1>
+      <p class="lede">HCMC · coding since 2014 · currently focused on multimodal AI &amp; agent orchestration.</p>
+      <nav class="topnav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Studied Software Technology at <strong>HCMUS</strong> (2011–2015). Started coding for work in 2014: Java → PHP → Python → <strong>Node.js</strong>, where I fell in love with building RESTful APIs.</p>
+      <p>On the front end I moved through <strong>AngularJS → React → Next.js</strong>, doing isomorphic JavaScript before SSR was cool again.</p>
+      <p>Today I run <a href="https://samcare.vn">samcare.vn</a> as a solo operator and ship a fleet of automation systems: Telegram bots, news scrapers, ad-video pipelines, and a self-hosted second brain.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="timeline">
+        <li>
+          <span class="when">2024 — now</span>
+          <span class="what"><strong>Indie builder</strong> · samcare.vn (DTC), automation fleet, AI agent demos</span>
+        </li>
+        <li>
+          <span class="when">2015 — 2024</span>
+          <span class="what"><strong>Front-end developer</strong> · Autonomous &amp; freelance — Node.js, AngularJS, React, isomorphic JS</span>
+        </li>
+        <li>
+          <span class="when">2014 — 2015</span>
+          <span class="what"><strong>Full-stack apprentice</strong> — Java, PHP, Python</span>
+        </li>
+        <li>
+          <span class="when">2011 — 2015</span>
+          <span class="what"><strong>BSc Software Technology</strong> · University of Science, HCMC</span>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="chips">
+        <span>TypeScript</span><span>JavaScript</span><span>Python</span><span>Java</span><span>PHP</span><span>SQL</span>
+        <span>Next.js</span><span>React</span><span>AngularJS</span><span>Tailwind</span><span>shadcn/ui</span>
+        <span>Node.js</span><span>FastAPI</span><span>Postgres</span><span>Redis</span>
+        <span>Claude API</span><span>OpenAI</span><span>Gemini</span><span>Multi-agent orchestration</span><span>Prompt caching</span><span>Tool use</span>
+        <span>Playwright (CDP)</span><span>Telegram Bot API</span><span>Cron orchestration</span>
+        <span>Vercel</span><span>Cloudflare Tunnel</span><span>Docker</span><span>tmux</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul class="projects">
+        <li>
+          <h3><a href="https://samcare.vn">samcare.vn</a></h3>
+          <p>Vietnamese DTC e-commerce on Next.js + Vercel. GA + Search Console pipeline, daily auto-blog, SEO monitor.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/MinhTamCK/tam-brain">tam-brain</a></h3>
+          <p>Personal second brain in the Karpathy LLM Wiki pattern. TypeScript viewer + auto-ingest from daily logs and URL summaries.</p>
+        </li>
+        <li>
+          <h3><a href="https://codepi.xyz/posts">codepi.xyz</a></h3>
+          <p>Personal blog — notes on building, AI agents, and indie ops.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/MinhTamCK/daugio-chatbot">daugio-chatbot</a></h3>
+          <p>Python product chatbot for SamCare’s dầu gió line — answers usage, stock, and shipping questions.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/MinhTamCK/vm-llm">vm-llm</a></h3>
+          <p>Educational local LLM server: FastAPI + llama-cpp-python in Docker, OpenAI-compatible API.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/MinhTamCK/ad-video-gen">ad-video-gen</a></h3>
+          <p>AI ad-video pipeline: Gemini 2.5 Flash Image for scenes + Veo 3.0 Fast for motion + ffmpeg for assembly.</p>
+        </li>
+        <li>
+          <h3><a href="https://github.com/MinhTamCK/claude-monitor">claude-monitor</a></h3>
+          <p>TypeScript tool to monitor Claude Code sessions and usage.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="writing">
+      <h2>Writing</h2>
+      <p>I write at <a href="https://codepi.xyz/posts">codepi.xyz/posts</a> — building notes, AI experiments, and ops post-mortems.</p>
+      <a class="button" href="https://codepi.xyz/posts">Read the blog →</a>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul class="contact">
+        <li><span>Email</span><a href="mailto:minhtamck4@gmail.com">minhtamck4@gmail.com</a></li>
+        <li><span>GitHub</span><a href="https://github.com/MinhTamCK">github.com/MinhTamCK</a></li>
+        <li><span>Blog</span><a href="https://codepi.xyz/posts">codepi.xyz/posts</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>© 2026 Nguyen Minh Tam · built static, no framework</p>
+    </footer>
+  </main>
 </body>
-
 </html>
