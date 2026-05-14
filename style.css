@@ -4,7 +4,54 @@
   --muted: #6b6b66;
   --rule: #e5e3dc;
   --accent: #2d6a4f;
+  color-scheme: light;
 }
+
+[data-theme="dark"] {
+  --bg: #0e0e0c;
+  --ink: #ededea;
+  --muted: #8c8c87;
+  --rule: #26261f;
+  --accent: #6ee7a0;
+  color-scheme: dark;
+}
+
+html, body {
+  transition: background-color .18s ease, color .18s ease;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 1px solid var(--rule);
+  background: var(--bg);
+  color: var(--muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 100;
+  transition: color .15s, border-color .15s, background-color .15s;
+  -webkit-tap-highlight-color: transparent;
+}
+.theme-toggle:hover {
+  color: var(--ink);
+  border-color: var(--ink);
+}
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+  stroke-width: 1.75;
+}
+.theme-toggle .icon-sun { display: none; }
+.theme-toggle .icon-moon { display: block; }
+[data-theme="dark"] .theme-toggle .icon-sun { display: block; }
+[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
 
 * { box-sizing: border-box; }
 
